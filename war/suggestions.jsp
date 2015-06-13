@@ -8,25 +8,24 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Hello,
-	<%=request.getHeader("Authorization")%>
-	<%=request.getRemoteUser()%>
-	<table border="1">
-		<thead>
-			<tr>
-				<th>Catgory</th>
-				<th>Information</th>
-			</tr>
-		</thead>
-		<c:forEach items="${info}" var="suggestion">
-			<tr>
-				<td><c:out value="${ suggestion.category}"></c:out></td>
-				<td><a
-					href='<c:out value="${ suggestion.information}"></c:out>'> <c:out
-							value="${ suggestion.information}"></c:out>
-				</a></td>
-			</tr>
-		</c:forEach>
-	</table>
+	<div align="center">
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Catgory</th>
+					<th>Information</th>
+				</tr>
+			</thead>
+			<c:forEach items="${info}" var="suggestion">
+				<tr>
+					<td><c:out value="${ suggestion.category}"></c:out></td>
+					<td><a
+						href='<c:out value="${ suggestion.information}"></c:out>'> <c:out
+								value="${ suggestion.information}"></c:out>
+					</a></td>
+				</tr>
+			</c:forEach>
+		</table>
+	</div>
 </body>
 </html>
