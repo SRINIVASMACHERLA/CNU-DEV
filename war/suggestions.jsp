@@ -8,6 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+	Hello,
+	<%=request.getHeader("Authorization")%>
+	<%=request.getRemoteUser()%>
 	<table border="1">
 		<thead>
 			<tr>

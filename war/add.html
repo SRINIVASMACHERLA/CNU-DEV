@@ -5,10 +5,24 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="/suggestion/add">
-		<label> Category </label> <input type="text" name="category" /> <br>
-		<label> information</label> <input type="text" name="information" />
-		<br> <input type="submit" value="add">
-	</form>
+
+	<div align="center">
+		<form action="/suggestion/add" method="post">
+			<table>
+				<tr>
+					<td>Category</td>
+					<td><input type="text" name="category" /></td>
+				</tr>
+				<tr>
+					<td>information</td>
+					<td><input type="text" name="information" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="submit"
+						value="add"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
 </body>
 </html>
