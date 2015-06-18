@@ -2,7 +2,7 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-md-10">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<h3 class="panel-title">Suggestions</h3>

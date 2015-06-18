@@ -6,7 +6,8 @@
 				<form action="/search">
 					<div class="input-group col-md-12">
 						<input type="text" class="form-control input-lg"
-							placeholder="Enter Keyword" name="keyword" /> <span class="input-group-btn">
+							placeholder="Enter Keyword" name="keyword" /> <span
+							class="input-group-btn">
 							<button class="btn btn-info btn-lg" type="submit">
 								<i class="glyphicon glyphicon-search"></i>
 							</button>
@@ -14,6 +15,12 @@
 					</div>
 				</form>
 			</div>
+		</div>
+	</div>
+	<div class="row" >
+		<div class="col-md-3">
+			<a class="btn icon-btn btn-success" href="/"><span
+				class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>Add</a>
 		</div>
 	</div>
 </div>
