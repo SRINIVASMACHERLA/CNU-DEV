@@ -5,27 +5,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>${title }</title>
+<script type="text/javascript" src="/resources/js/bootstrap.js"></script>
+<link href="/resources/css/bootstrap.min.css" rel="stylesheet" />
+<link href="/resources/css/bootstrap.css" rel="stylesheet" />
+<link href="/resources/css/search.css" rel="stylesheet" />
+<link href="/resources/css/result_table.css" rel="stylesheet" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
-	<div align="center">
-		<table border="1">
-			<thead>
-				<tr>
-					<th>Catgory</th>
-					<th>Information</th>
-				</tr>
-			</thead>
-			<c:forEach items="${info}" var="suggestion">
-				<tr>
-					<td><c:out value="${ suggestion.category}"></c:out></td>
-					<td><a
-						href='<c:out value="${ suggestion.information}"></c:out>'> <c:out
-								value="${ suggestion.information}"></c:out>
-					</a></td>
-				</tr>
-			</c:forEach>
-		</table>
-	</div>
+	<h3 id="heading"></h3>
+	<jsp:include page="search.jsp" />
+	<jsp:include page="search_result.jsp"></jsp:include>
 </body>
 </html>
